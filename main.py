@@ -10,9 +10,6 @@ if __name__ == "__main__":
         novo_bloco = Block(i, f"Dados do Bloco {i}", "")
         miner_block(minha_blockchain, novo_bloco)
 
-
-    print(minha_blockchain.is_valid())
-
     for bloco in minha_blockchain.chain:
         print(f"Índice: {bloco.index}")
         print(f"Timestamp: {bloco.timestamp}")
